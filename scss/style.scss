@@ -2,6 +2,16 @@
 @import "../bower_components/font-awesome-sass/assets/stylesheets/font-awesome.scss";
 @import "./mixins.scss";
 
+//Color Scheme//
+//https://color.adobe.com/create/color-wheel/?base=0&rule=Analogous&selected=3&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.2635294117647059,0.5450980392156862,0.4666666666666667,0.3137254901960784,0.2907563435148162,0.2557132205400146,0.3843137254901961,0.42830232069166896,0.25882352941176473,0.22219917012448134,0.23071811266392542,0.51,0.5450980392156862,0.34509803921568627,0.45583926484536735&swatchOrder=0,1,2,3,4//
+
+$phils-green: rgba(67,139,119,1);
+$phils-brown: rgba(80,74,65,1);
+$phils-sage:  rgba(98,109,66,1);
+$phils-purple: rgba(51,53,117,1);
+$phils-magenta:rgba(139,88,116,1);
+$phils-white:  rgba(255,255,255,1);
+$phils-darkgray-translucent: rgba(75,75,75,.75);
 
 /**
  * BOX-SIZING
@@ -86,6 +96,10 @@ body {
     vertical-align: middle;
 }
 
+hr{
+    width: 50%;
+}
+
 
 //*** My Styles ***
 
@@ -101,7 +115,7 @@ header{
 }
 
 .h-greeting{
-    color: rgba(255,255,255,1);
+    color: $phils-white;
     font-weight: 700;
 
     h1{
@@ -109,9 +123,9 @@ header{
     }
     .more-btn{
         background: rgba(0,0,55,.7);
-        border: 1px solid rgba(255,255,255,1);
+        border: 1px solid $phils-white;
         transition: background .4s;
-        color: rgba(255,255,255,1);
+        color: $phils-white;
 
         &:hover{
             background: rgba(50,50,55,1);
@@ -122,7 +136,42 @@ header{
     }
 
 }
+//Landing Page: About//
 .about{
     font-size: 72px;
 
 }
+//Landing Page: Services//
+.services{
+    padding: 2rem 1rem;
+
+    background: $phils-green;
+    color: $phils-white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,1);
+    h2{
+        text-align: center;
+    }
+
+    .service-div{
+        padding: 2rem;
+    }
+}
+
+.mylevel{
+    display: table;
+    width: 100%;
+    background: url("../images/city-lights.jpg") no-repeat center center scroll;
+    height: 30rem;
+    background-size: cover;
+    vertical-align: middle;
+    text-align: center;
+    color: $phils-white;
+    h2{
+        background: $phils-darkgray-translucent;
+        width: 50%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+}
+
