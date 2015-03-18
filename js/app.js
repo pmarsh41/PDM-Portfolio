@@ -26,7 +26,7 @@ function app(){
         // {url: "./bower_components/jsnox/jsnox.js"},
 
         // other stuff
-        {url: "./bower_components/pace/pace.min.js"},
+        {url: "./bower_components/pace/pace.min.js"}
         //{url: "./js/TemplateView.js"}//
     ).then(function(){
         // if turning on JSnoX, uncommment the following line
