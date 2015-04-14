@@ -149,11 +149,11 @@ header {
     vertical-align: middle;
     text-align: center;
     color: $phils-white;
-    h2 {
-        background: $phils-darkgray-translucent;
-        width: 50%;
-        padding: 2rem;
-        margin: 0 auto;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+
+    ul{
+        list-style-type: none;
+        text-align: center;
     }
 }
 //My Work//
@@ -175,6 +175,9 @@ header {
 
 .map {
     height: 500px;
+.scrolloff {
+        pointer-events: none;
+    }
 }
 
 
